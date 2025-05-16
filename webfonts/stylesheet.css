@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Lavish';
+    src: url('LavishRegular.eot');
+    src: url('LavishRegular.eot?#iefix') format('embedded-opentype'),
+        url('LavishRegular.woff2') format('woff2'),
+        url('LavishRegular.woff') format('woff'),
+        url('LavishRegular.ttf') format('truetype'),
+        url('LavishRegular.svg#LavishRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'UVF Pistilli';
+    src: url('UVFPistilli.eot');
+    src: url('UVFPistilli.eot?#iefix') format('embedded-opentype'),
+        url('UVFPistilli.woff2') format('woff2'),
+        url('UVFPistilli.woff') format('woff'),
+        url('UVFPistilli.ttf') format('truetype'),
+        url('UVFPistilli.svg#UVFPistilli') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Akrobat';
+    src: url('Akrobat-Regular.eot');
+    src: url('Akrobat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Akrobat-Regular.woff2') format('woff2'),
+        url('Akrobat-Regular.woff') format('woff'),
+        url('Akrobat-Regular.ttf') format('truetype'),
+        url('Akrobat-Regular.svg#Akrobat-Regular') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

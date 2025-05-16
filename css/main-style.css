@@ -1,0 +1,610 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Quicksand:wght@300..700&display=swap');
+
+@import url( "../webfonts/stylesheet.css");
+
+@import url("all.css");
+
+body /* định dạng cho nguyên 1 trang*/
+{
+	background-color: #eeeeee; /* màu nền cho trang web*/
+	color: #003D40; /* màu chữ*/ 
+	font-family: "Quicksand",Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif" ;
+	font-size: 16px;
+	margin: 0    /* bỏ đẩy lề của trang web*/
+}
+.font-subtitle1
+{
+	font-family: "Mea Culpa", cursive;
+  	font-weight: 600;
+  	font-style: normal;
+}
+.font-sub-noel
+{
+	font-family: 'Hello Christmas';
+	font-weight: 400
+	
+}
+.font-buom
+{
+	font-family: 'ButterFly';
+	
+}
+h1{ 
+	    font-family: 'UVF Pistilli';
+		font-size: 45px;
+		color: #003d40;
+	}
+h2
+{ font-size: 40px;
+  font-family: 'Akrobat';
+  
+
+}
+h3{ font-size: 36px}
+h4{ font-size: 24px}
+h5{ font-size: 20px}
+h6{ font-size: 18px}
+h1,h2,h3,h4,h5,h6, a,button{font-weight: 500; margin-bottom: 20px; margin-top: 15px;
+	
+}
+
+p{
+	font-family: 'Akrobat';
+	font-size: 16px;
+}
+a{  font-family: 'Akrobat';
+	font-size: 16px;
+	color:#003D40;
+	text-decoration:none;
+	font-weight: 700;
+	
+}
+a:hover /* khi đưa chuột và chữ có thẻ a - liên kết trang web nào đó*/
+{
+	color: #FAFAFA;
+	border-radius : 15px;
+
+}
+
+/*----------------------- layout bo cuc web----small----------*/
+.container-fluid
+{
+	width: 100%; padding-left: 16px; padding-right: 16px
+}
+/*------------- mobile first-----------------*/
+.container
+{
+	width:95%; margin: auto
+}
+/*--------------size container cho tablet (ipad)-medium--------------*/
+@media (min-width:600px)
+{
+	.container
+	{
+		width:90%; margin: auto
+	}
+	
+}
+/*--------------size container cho pc 1000----large-----------*/
+@media (min-width:1000px)
+{
+	.container
+	{
+		width:80%; margin: auto
+	}
+}
+/*---------- chia he thong grid 12 column*/
+.col-1{ width: 8.3333%; }
+.col-2{ width:16.6666%}
+.col-3{ width: 25%}
+.col-4{ width: 33.33%}
+.col-5{ width:41.66%}
+.col-6{ width: 50%}
+.col-7{ width:58.33%}
+.col-8{ width: 66.66%}
+.col-9{ width: 75%}
+.col-10{ width: 83.33%}
+.col-11{ width: 91.66%}
+.col-12{ width: 100%}
+[class*="col-"]
+{
+	padding: 15px;
+	/*border: 1px solid black;*/
+	
+}
+*{ box-sizing: border-box}
+.img-100{width: 100%;
+}
+.row 
+{
+	display: flex;
+	flex-wrap: wrap;
+	
+	
+}
+.card
+{ 
+	  background-color: #d4f1f4;
+      border-radius: 15px;
+      overflow: hidden;
+	  
+	}
+
+.card:hover
+{
+	  transform: scale(1.03);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+}
+.card-body
+{ 
+	padding: 16px
+}
+
+footer
+{
+	background: #ccc
+}
+/*---- style he thong mau chữ cho web---*/
+.text-primary { color: #003D40} /* mau chử chính (lam nhan ý chính */
+.text-secondary { color:#05916F} /* mau chử phụ (lam nhan ý phụ trong thiet ke */
+.text-light{ color: #DDDDDD}
+.text-dark{color: #323232}
+/*---- style he thong mau nền background cho web---*/
+.bg-primary { background-color: #D4F1F4}
+.bg-secondary { background-color:#05916F }
+.bg-light{background-color:#DDDDDD}
+.bg-dark {background-color:#323232}
+/*--- style he thong mau cho nút button---*/
+.btn-primary
+{ 
+	background-color: #003D40;
+	color: white;
+	padding: 8px 16px;
+	border-radius: 15px;
+
+
+}
+.btn-primary:hover {
+	background-color:#05916F;
+	color: white;
+	box-shadow: 0 0 5px #003D40,0 0 25px #003D40,0 0 50px #003D40, 0 0 200px;
+	
+	
+}
+
+.btn-secondary
+{ 
+	background-color: #05916F;
+	color: white;
+	padding: 8px 16px;
+	border-radius: 4px;
+	width: 400px
+}
+.btn-secondary:hover{
+	background-color:deeppink;
+	color: white
+}
+
+.btn-outline-primary
+{
+	border: 1px deeppink inset;
+	color: deeppink;
+	padding: 8px 16px;
+	border-radius: 4px;
+	margin:2px ;
+	
+}
+.btn-outline-primary:hover
+{
+	background-color:deeppink;
+	color: white
+}
+.btn-outline-secondary
+{
+	border: 1px #05916F solid;
+	color: #05916F;
+	padding: 8px 16px;
+	border-radius: 4px;
+	margin:2px ;
+	
+}
+.btn-outline-secondary:hover
+{
+	background-color:#05916F;
+	color: white
+}
+/*--- style cho menu can ban chi dung duoc tai pc---*/
+ul.menu
+{
+	display: flex;
+	padding: 0;
+	list-style: none;
+	justify-content:flex-start
+}
+ul.menu li a
+
+{
+	padding: 8px 16px;	/*background-color: deeppink;*/
+	color: #333;
+	margin: 2px;
+	letter-spacing: 0.08rem;
+	display: block
+}
+ul.menu li a:hover
+{
+	background-color:deeppink;
+	border-bottom: 2px solid #666;
+	color: pink
+}
+ul.menu li
+{
+	position: relative
+}
+ul.menu .dropdown-menu
+{
+	width: 200px;
+	position: absolute; 
+	left: 0;
+	top: 150%;
+	z-index: 9999;
+	background: #eee;
+	opacity: 0;
+	transition: all 1s;
+	/*transform: scaleY(0);
+	transform-origin: top center;*/
+	}
+ul.menu li:hover >.dropdown-menu
+{
+	/*transform: scaleY(1);*/
+	left: 0;
+	top: 85%;
+	opacity: 1
+}
+
+ul.menu .dropdown-menu a
+{
+	display: block /* mỗi a trong dropdown menu sẽ chiếm 1 hàng*/
+}
+
+
+
+
+
+#hero{
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.text-center
+{
+	text-align: center
+}
+.text-right
+{
+	text-align: right
+}
+.text-justify
+{
+	text-align: justify
+}
+.border-bottom
+{
+	border-bottom: 1px solid #000000
+		
+}
+
+.d-flex{display: flex}
+/*--đẩy chiều dọc cho các box trong flex----*/
+.align-items-center{align-items: center}
+.align-items-end{align-items: end}
+
+/*---đẩy chiều ngan cho các box trong flex ----*/
+.justify-between{justify-content: space-between}
+.justify-center{justify-content: center}
+.justify-end{justify-content: flex end}
+
+.navbar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+		
+}
+
+.logo{
+	font-size: 30px;
+	font-family: 'UVF Pistilli'
+	
+}
+
+.navbar .logo{font-size: 2rem;}
+
+
+.navbar ul {display: flex;
+list-style: none;
+margin: 0;
+padding: 0;
+
+}
+.navbar ul li{position: relative}
+.navbar ul li a 
+{
+	padding: 10px 20px;
+	font-family: 'Akrobat';
+	font-weight: 600;
+}
+
+.fa-star
+{
+	color: orange
+}
+/*style cho heej thoong */
+ .my-100
+{margin-bottom: 100px;	
+margin-top: 100px
+}
+.my-50
+{
+	margin-top: 50px;
+	margin-bottom: 50px
+}
+
+.p-0{padding: 0}
+.p-10{padding: 10px}
+.mx-auto{margin-left: auto;margin-right: auto}
+.ml-auto{margin-left: auto}
+.mr-auto{margin-right: auto}
+.py-100
+{
+	padding-top:100px;
+	padding-bottom:100px;
+}
+
+#danh-muc .col-4{position: relative;
+}
+#danh-muc .caption{
+	
+	
+	padding: 10px;
+	position: absolute;
+	left: 0;
+	top: 45%;
+	width: 100%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	
+}
+#danh-muc .caption p {background: #D4F1F4;padding: 10px; }
+#danh-muc .caption p:hover {
+	color: #FAFAFA;
+	border-radius : 15px;
+ }
+
+#danh-muc .anh-dm>img{border-radius: 10px}
+#danh-muc .anh-dm1>img{border-radius: 10px}
+#danh-muc .anh-dm2>img{border-radius: 10px}
+
+
+#danh-muc img{transition: all 1s}
+#danh-muc .anh-dm:hover>img
+
+{opacity: 0.3;
+  transform: rotate(20deg) scale(1.5);
+  animation: gradientMove 2s linear infinite;}
+
+#danh-muc .anh-dm1:hover>img
+
+{ 
+  opacity: 0.3;
+  transform: rotate(20deg) scale(1.5);
+  animation: gradientMove 2s linear infinite;}
+
+
+#danh-muc .anh-dm2:hover>img
+
+{opacity: 0.3;
+  transform: rotate(20deg) scale(1.5);
+  animation: gradientMove 2s linear infinite;
+
+}
+#new-collection .left-box
+{
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	font-family: 'Lavish';
+	font-size: 14px;
+	background-color: #30382f;
+	color: #fffbdf;
+	padding: 5px 15px;
+	font-weight: bold;
+	border-radius: 3px;
+}
+#new-collection .right-box
+{
+	position: absolute;
+	right: -100px;
+	top:  10px;
+	transition: all 0.5s
+}
+#new-collection .right-box a
+{
+	display: block;
+	border: 1px solid #30382f;
+	border-radius: 50%;
+	padding: 10px;
+	margin: 5px;
+	
+}
+#new-collection .card
+{
+	position:relative;
+	overflow: hidden;
+}
+#new-collection .card:hover> .right-box{right:10px}
+
+
+.star-empty-4::before {
+  content: '\2605\2605\2605\2605\2606'; 
+  color: #FFA200;
+  font-size: 15px;
+}
+
+.star-empty::before {
+  content: '\2605\2605\2605\2605\2605'; 
+  color: #FFA200;
+  font-size: 15px;
+}
+#cam-nhan .content{
+position: relative;
+padding-top: 50px;
+background-color: #CDF2F6;
+
+}
+#cam-nhan .avatar
+{
+position: absolute;
+border-radius: 50%;
+left: 40%;
+top:-50px;
+padding: 5px;
+}
+#cam-nhan h3 {
+	font-weight: 900;
+	background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+	background-size: 200%;
+	background-clip: text;
+	color: transparent;
+	animation: text-animation 2s infinite linear;
+	
+}
+
+@keyframes text-animation
+{0%
+	{
+		background-position: 0%
+	}
+100%
+	{
+		background-position: 200%
+	}	
+}
+#cam-nhan i { 
+opacity: 50%;
+}
+
+
+/*css banner*/
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+	position: relative;
+}
+
+.banner-caption
+{
+
+    width: 40%;
+    padding-top: 10px;
+	position:absolute;
+	right: 0;
+	top:50%;
+	bottom:50%;
+	text-align: left;
+	height:100px;
+	
+	
+}
+#video
+{
+	position: relative;
+	
+}
+
+
+
+    .video-container {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .video-container img 
+{
+      display: block;
+      width: 100%;
+      height: auto;
+	  border-radius: 10px;
+		  
+    }
+
+    .play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+	  border: 3px solid black ;
+    }
+
+    .play-button::before {
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      border-left: 30px solid white;
+      border-top: 20px solid transparent;
+      border-bottom: 20px solid transparent;
+	  justify-content: space-between;
+	  
+	 
+    }
+
+
+#best .left-box
+{
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	font-family: 'Lavish';
+	font-size: 14px;
+	background-color: #30382f;
+	color: #fffbdf;
+	padding: 5px 15px;
+	font-weight: bold;
+	border-radius: 3px;
+}
+#best .right-box
+{
+	position: absolute;
+	right: -100px;
+	top:  10px;
+	transition: all 0.5s
+}
+#best .right-box a
+{
+	display: block;
+	border: 1px solid #30382f;
+	border-radius: 50%;
+	padding: 10px;
+	margin: 5px;
+	
+}
+#best .card
+{
+	position:relative;
+	overflow: hidden;
+}
+#best .card:hover> .right-box{right:10px}
+
+
